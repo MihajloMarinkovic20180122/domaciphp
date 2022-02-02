@@ -352,7 +352,153 @@ $('#izmeniZaposlenogForm').submit(function () {
     });
 });
 
+function sortTableAsc1() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable1");
+    switching = true;
+    rows = table.rows;
 
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[3];
+            y = rows[i + 1].getElementsByTagName("TD")[3];
+            if (x.innerHTML > y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+}
+function sortTableDsc1() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable1");
+    switching = true;
+    rows = table.rows;
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[3];
+            y = rows[i + 1].getElementsByTagName("TD")[3];
+            if (x.innerHTML < y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+
+}
+function sortTableAsc2() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable2");
+    switching = true;
+    rows = table.rows;
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[0];
+            y = rows[i + 1].getElementsByTagName("TD")[0];
+            if (x.innerHTML > y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+}
+function sortTableDsc2() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable2");
+    switching = true;
+    rows = table.rows;
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[0];
+            y = rows[i + 1].getElementsByTagName("TD")[0];
+            if (x.innerHTML < y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+
+}
+function sortTableAsc3() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable3");
+    switching = true;
+    rows = table.rows;
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[1];
+            y = rows[i + 1].getElementsByTagName("TD")[1];
+            if (x.innerHTML > y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+}
+function sortTableDsc3() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable3");
+    switching = true;
+    rows = table.rows;
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[1];
+            y = rows[i + 1].getElementsByTagName("TD")[1];
+            if (x.innerHTML < y.innerHTML) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+
+}
 
 $('#dodajIzvestaj').submit(function(){
     event.preventDefault();
