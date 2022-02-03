@@ -531,7 +531,47 @@ $('#dodajIzvestaj').submit(function(){
     });
 });
 
+function proveriDatum(){
 
+    var today = new Date();
+    var dd = today.getDate();
+    
+    var mm = today.getMonth()+1; 
+    var yyyy = today.getFullYear();
+    if(dd<10) 
+    {
+        dd='0'+dd;
+    } 
+    
+    if(mm<10) 
+    {
+        mm='0'+mm;
+    } 
+    today = yyyy+'-'+mm+'-'+dd;
+    console.log(today);
+    
+
+       request = $.ajax({
+           url:'handler/checkDate.php',
+           type: 'post',
+           data: {'datum':today}
+       });
+   request.done(function(response, textStatus, jqXHR){
+       if(response == "UNET"){
+           document.getElementById("txt-izvestaj").readOnly = true;
+           document.querySelector("#btnPosaljiIzvestaj").innerHTML = "Izvestaj je vec poslat!";
+           document.getElementById("btnPosaljiIzvestaj").setAttribute('disabled','disabled');
+
+       }
+       else{ console.log("Neuspeh" + response);
+       }   
+       
+   });
+
+   request.fail(function(jqXHR, text, errorThrown){
+       console.error('Sledeca greska se desila: '+textStatus, errorThrown)
+   });
+};
 
 $('#btnPrikaziIzvestaj').click(function () {
 

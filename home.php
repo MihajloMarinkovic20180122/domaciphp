@@ -42,7 +42,7 @@ if($_SESSION['username'] != "admin"){
     }else{
                 
     ?>
-<body >
+<body onload="proveriDatum()">
 <?php
     }
 }else{
