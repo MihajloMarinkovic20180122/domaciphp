@@ -1,121 +1,127 @@
-*{
-font-family: 'Poppins';
+* {
+  font-family: "Poppins";
 }
-body{
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-image: url("http://stevenjbarnes.com/wp-content/uploads/revslider/splash-creative-light-01-animated/Slider-CL01-Background.png");
-    /* background-color: lightsteelblue; */
-    /* color: lightsteelblue; */
-    /* background-repeat: repeat; */
+body {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: url("https://wallpaperaccess.com/full/1489194.jpg");
+  /* background-image: url("http://stevenjbarnes.com/wp-content/uploads/revslider/splash-creative-light-01-animated/Slider-CL01-Background.png"); */
+  /* background-color: lightsteelblue; */
+  /* color: lightsteelblue; */
+  background-repeat: repeat;
+  background-size: cover;
 }
-#logout{
-    color: black;
-    background-color: #fbff00;
-    text-align: center;   
-    font-size: 15px; 
-    margin-right: 0; 
-    text-decoration: none; 
-    border-radius: 7px; 
-    padding: 5px;
-    text-align: right;
-    margin-right: 0;
+#logout {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 15px;
+  margin-right: 0;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 5px;
+  text-align: right;
+  margin-right: 0;
 }
-#logout:hover{
-    color: #023E8A;
-    background-color: white;
+#logout:hover {
+  color: black;
+  background-color: rgb(181, 184, 177);
 }
-.panel-body{
-    margin-right: 20px;
-    margin-left: 20px;
+.panel-body {
+  margin-right: 20px;
+  margin-left: 20px;
 }
-#btn-izmeni-automobil{
-    background-color: #f8961e; 
-    color: white;
+#btn-izmeni-automobil {
+  background-color: #f8961e;
+  color: white;
 }
-#btn-obrisi-automobil{
-    background-color: #cb1b16; 
-    color: white;
+#btn-obrisi-automobil {
+  background-color: #cb1b16;
+  color: white;
 }
-#btn-izmeni-automobil:hover{
-    background-color: #f85e00;
+#btn-izmeni-automobil:hover {
+  background-color: #f85e00;
 }
-#btn-obrisi-automobil:hover{
-background-color: #65010c;
+#btn-obrisi-automobil:hover {
+  background-color: #65010c;
 }
-#btn-izmeni-zaposlenog{
-    background-color: #f8961e; 
-    color: white;
+#btn-izmeni-zaposlenog {
+  background-color: #f8961e;
+  color: white;
 }
-#btn-obrisi-zaposlenog, #btnObrisiIzvestaj{
-    background-color: #cb1b16; 
-    color: white;
+#btn-obrisi-zaposlenog,
+#btnObrisiIzvestaj {
+  background-color: #cb1b16;
+  color: white;
 }
-#btn-izmeni-zaposlenog:hover{
-    background-color: #f85e00;
+#btn-izmeni-zaposlenog:hover {
+  background-color: #f85e00;
 }
-#btn-obrisi-zaposlenog:hover{
-background-color: #65010c;
+#btn-obrisi-zaposlenog:hover {
+  background-color: #65010c;
 }
-#btnObrisiIzvestaj:hover{
-background-color: #65010c;
+#btnObrisiIzvestaj:hover {
+  background-color: #65010c;
 }
-#btnPrikaziIzvestaj{
-    color: white;
-    background-color: #023E8A;
+#btnPrikaziIzvestaj {
+  color: white;
+  background-color: #023e8a;
 }
-#btnPrikaziIzvestaj:hover{
-    background-color: rgb(57, 77, 252);
+#btnPrikaziIzvestaj:hover {
+  background-color: rgb(57, 77, 252);
 }
-#txt-pretraga-automobila{
-    width: 80%; 
-    border-bottom-left-radius: 10px; 
-    border-bottom-right-radius: 10px; 
-    border-style: none;
-    outline: none;
-    display: none;
+#txt-pretraga-automobila {
+  width: 80%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: none;
+  outline: none;
+  display: none;
 }
-#txt-pretraga-zaposlenog{
-    width: 80%; 
-    border-bottom-left-radius: 10px; 
-    border-bottom-right-radius: 10px; 
-    border-style: none;
-    outline: none;
-    display: none;
+#txt-pretraga-zaposlenog {
+  width: 80%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: none;
+  outline: none;
+  display: none;
 }
-.sort-link{
-    background-color: #023E8A;
-    color: white !important;
-    border-radius: 5px;
-    padding: 5px;
+.sort-link {
+  background-color: #023e8a;
+  color: white !important;
+  border-radius: 5px;
+  padding: 5px;
 }
-.sort-link:hover{
-    color: #023E8A !important;
-    background-color: white;
-    cursor: pointer;
+.sort-link:hover {
+  color: #023e8a !important;
+  background-color: white;
+  cursor: pointer;
 }
-th, td{
-    text-align: center;
+th,
+td {
+  text-align: center;
 }
-#btn-dodaj-zaposlenog, #btn-pretraga-zaposlenog, #btn-dodaj-automobil, #btn-pretraga-automobila{
-    background-color:#fbff00; 
-    color: rgb(0, 0, 0);
+#btn-dodaj-zaposlenog,
+#btn-pretraga-zaposlenog,
+#btn-dodaj-automobil,
+#btn-pretraga-automobila {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(0, 0, 0);
 }
-#btn-dodaj-zaposlenog:hover{
-    color: #023E8A;
-    background-color: white;
+#btn-dodaj-zaposlenog:hover {
+  color: black;
+  background-color: rgb(181, 184, 177);
 }
-#btn-pretraga-zaposlenog:hover{
-    color: #023E8A;
-    background-color: white;
+#btn-pretraga-zaposlenog:hover {
+  color: black;
+  background-color: rgb(181, 184, 177);
 }
-#btn-dodaj-automobil:hover{
-    color: #023E8A;
-    background-color: white;
+#btn-dodaj-automobil:hover {
+  color: black;
+  background-color: rgb(181, 184, 177);
 }
-#btn-pretraga-automobila:hover{
-    color: #023E8A;
-    background-color: white;
+#btn-pretraga-automobila:hover {
+  color: black;
+  background-color: rgb(181, 184, 177);
 }
-

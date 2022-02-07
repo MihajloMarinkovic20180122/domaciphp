@@ -1,49 +1,43 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
-body
-{
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    /* background-image: url("https://wallpaperbat.com/img/234990-baking-wallpaper-top-free-baking-background.jpg"); */
-    background-image: url("https://png.pngtree.com/png-vector/20191026/ourmid/pngtree-car-pattern-simple-style-png-image_1860230.jpg");
-    /* background-position: center;
+body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* background-image: url("https://wallpaperbat.com/img/234990-baking-wallpaper-top-free-baking-background.jpg"); */
+  background-image: url("https://wallpaperaccess.com/full/2473959.jpg");
+  /* background-position: center;
     background-position: center;
     /* background-repeat: no-repeat; 
     background-size: cover; */
 }
-.tataDiv
-{
-    width: 100%;
-    height: 100%;
+.tataDiv {
+  width: 100%;
+  height: 100%;
 }
-#logInDiv
-{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 30%;
-    border-radius: 7px;
-    background-color: lightsteelblue;
+#logInDiv {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30%;
+  border-radius: 7px;
+  background-color: rgb(189, 190, 192);
 }
-.btnSubmit
-{
-    margin-top: 18px;
-    margin-bottom: 15px;
-    border-style: none;
-    border-radius: 7px;
-    padding: 7px;
-    background-color: #023E8A;
-    color: white !important;
+.btnSubmit {
+  margin-top: 18px;
+  margin-bottom: 15px;
+  border-style: none;
+  border-radius: 7px;
+  padding: 7px;
+  background-color: #023e8a;
+  color: white !important;
 }
-.btnSubmit:hover
-{
-    color: #023E8A !important;
-    background-color: white !important;
-    cursor: pointer;
+.btnSubmit:hover {
+  color: black !important;
+  background-color: white !important;
+  cursor: pointer;
 }

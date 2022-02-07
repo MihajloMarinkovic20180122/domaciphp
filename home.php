@@ -52,7 +52,7 @@ if($_SESSION['username'] != "admin"){
 }
 ?>
 
-<div class="container_float" style="width: 100%; background-color: #0077B6; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; margin-bottom: 20px;  padding: 3px;">
+<div class="container_float" style="width: 100%; background-color: black; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; margin-bottom: 20px;  padding: 3px;">
 
     <div class="row">
     <div class="col-md-1" style="color: white;">
@@ -544,12 +544,12 @@ if($_SESSION['username'] != "admin"){
     ?>
     <form action="#" method="post" id="dodajIzvestaj" style="text-align: center;">
     <div id="dnevniIzvestaj" class="form-group" style="margin-right: auto; margin-left: auto;">
-        <label for="" style="background-color: #fbff00; color: black !important; border-radius: 5px; padding: 5px;"> Unesite dnevni izvestaj: </label>
+        <label for="" style="background-color: rgba(255, 255, 255, 0.9); color: black !important; border-radius: 5px; padding: 5px;"> Unesite dnevni izvestaj: </label>
             
     <textarea name="txt-izvestaj" id="txt-izvestaj" rows="15" class="form-control" style="margin-right: auto; margin-left: auto; border-radius: 15px; width: 30%; resize: none;"></textarea>
     <div class="form-group">
     <button id="btnPosaljiIzvestaj" type="submit" class="btn btn-block"
-    style="background-color: #fbff00; border-radius: 10px; color: black; width: 30%; text-align: center; margin-right: auto; margin-left: auto; margin-top: 10px;">
+    style="background-color: #023e8a; border-radius: 10px; color: white; width: 30%; text-align: center; margin-right: auto; margin-left: auto; margin-top: 10px;">
     Posalji
     </button>
 
